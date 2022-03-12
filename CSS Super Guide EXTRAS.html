@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>CSS Super Guide | Extras </title>
+    </head>
+    <body class="extras">
+        <!-- Navigation Bar Code -->
+        <div class="navBar navContainer">
+            <a href="https://github.com/RealNibblesNBytes" class="logo"><img src="NIBBLESNBYTESLOGOFINAL.png" width="60px" height="60px"></a>
+            <nav class="navBar">
+                <a href="index.html" class="links"><strong>HOME</strong></a>
+                <a href="CSS Super Guide STYLES.html" class="links"><strong>STYLES</strong></a>
+                <a href="CSS Super Guide EXTRAS.html" class="links extras"><strong>EXTRAS</strong></a>
+            </nav>
+        </div>
+        <!-- END Navigation Bar Code -->
+        <div class="pageContent">
+            <h1 class="stylesTitle">Extras</h1>
+            <center>
+                <div class="styleContent">
+                    <h1 class="styleDesc" >
+                        Making a button wiggle upon touch.
+                    </h1>
+                    <h2 class="styleExample">
+                        <strong>Code:</strong> We can achieve this through an animation.
+                    </h2>
+                    <div class="styleCode">
+                        div.extraWiggleResult:hover{<br/>
+                            &emsp;animation: wiggle 0.25s 1 normal ease-out;<br/>
+                        }<br/>
+                        <br/>
+                        @keyframes wiggle{<br/>
+                            &emsp;0% { transform: rotate(-5deg); }<br/>
+                            &emsp;25% { transform: rotate(3deg); }<br/>
+                            &emsp;50% { transform: rotate(-2deg); }<br/>
+                            &emsp;75% { transform: rotate(1deg); }<br/>
+                            &emsp;100% { transform: rotate(0deg); }<br/>
+                        }<br/>
+                        <br/>
+                    </div>
+                    <h2 class="styleExample">
+                        <strong>Result:</strong> We made a button that wiggles.
+                    </h2>
+                    <div class="styleResult">
+                        <div class="extraWiggleResult">
+                            <h1 class="extraWiggleResult">Button</h1>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </body>
+</html>
